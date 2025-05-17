@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>😘Ari-an Swimming Pool❤️</title>
+  <meta name="description" content="Visit Ari-an Swimming Pool in Tukuran, Zamboanga del Sur. Enjoy affordable rates, fun amenities, and relaxing overnight stays. Reserve now!">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #a8edea, #fed6e3);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .promo-box, .info-box, .form-box {
+      background-color: rgba(255, 255, 255, 0.7);
+      border: 2px solid #ccc;
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      max-width: 800px;
+      width: 100%;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      margin-bottom: 30px;
+    }
+
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+
+    p, li {
+      font-size: 1.1em;
+      margin: 10px 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+    }
+
+    .promo-code {
+      background: #ff6b81;
+      color: white;
+      padding: 10px 20px;
+      font-weight: bold;
+      font-size: 1.5em;
+      border-radius: 10px;
+      display: inline-block;
+      margin: 15px 0;
+    }
+
+    .cta-button {
+      background: #ff6b81;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background: #ffa1b5;
+    }
+
+    .media-section img,
+    .media-section video {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .media-section {
+      max-width: 800px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .map-box {
+      max-width: 800px;
+      width: 100%;
+      margin: 20px 0;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      text-align: left;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 1em;
+    }
+
+    button[type="submit"] {
+      background: #ff6b81;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #FFFF4040;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="promo-box">
+    <h1>❤️ Ari-an Swimming Pool ❤️</h1>
+    <p>Cool down and have fun at our premium swimming pool!</p>
+    <p>Enjoy <strong>20% OFF</strong> on your next visit.</p>
+    <div class="promo-code">SWIM20</div>
+    <p>Use this code at checkout or entrance.</p>
+    <p>Promo valid until: <strong>June 30, 2025</strong></p>
+  </div>
+
+  <div class="info-box">
+    <h2>Entrance, Cottage & Overnight Fees</h2>
+    <ul>
+      <li><strong>Entrance Fee:</strong> ₱50 per head</li>
+      <li><strong>Kids (Below 10 yrs):</strong> ₱30 per head</li>
+      <li><strong>Cottage:</strong> ₱900</li>
+      <li><strong>Temporary Cottage:</strong> ₱1400 (16 chairs)</li>
+      <li><strong>Table with Umbrella:</strong> ₱500 (8 chairs)</li>
+      <li><strong>Overnight Fee (cottage):</strong> ₱1100</li>
+    </ul>
+  </div>
+
+  <div class="info-box">
+    <h2>Operating Hours & Contact</h2>
+    <ul>
+      <li><strong>Opening Time:</strong> 7:00 AM</li>
+      <li><strong>Closing Time:</strong> 6:00 PM</li>
+      <li><strong>Overnight Guests:</strong> 6:00 PM to 5:00 AM</li>
+      <li><strong>Contact Number:</strong> 09628314646</li>
+    </ul>
+  </div>
+
+  <div class="info-box">
+    <h2>Location</h2>
+    <p>Barangay Tintongan, Tukuran Zamboanga Del Sur</p>
+  </div>
+
+  <div class="form-box">
+    <h2>Make a Reservation</h2>
+    <form action="submit-form.php" method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="contact">Contact Number:</label>
+      <input type="tel" id="contact" name="contact" required>
+
+      <label for="date">Date of Visit:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" required min="1">
+
+      <label for="cottage">Cottage Type:</label>
+      <select id="cottage" name="cottage">
+        <option value="open">Cottage</option>
+        <option value="closed">Temporary Cottage</option>
+        <option value="umbrella">Table with Umbrella</option>
+        <option value="none">None</option>
+      </select>
+
+      <label for="overnight">Overnight Stay?</label>
+      <select id="overnight" name="overnight">
+        <option value="no">No</option>
+        <option value="yes">Yes</option>
+      </select>
+
+      <label for="message">Additional Notes:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Anything else you want to add..."></textarea>
+
+      <button type="submit">Submit Reservation</button>
+    </form>
+  </div>
+
+  <div class="media-section">
+    <img src="Pool.jpg" alt="Swimming Pool Photo" />
+    <video controls poster="pool video.mp4">
+      <source src="pool video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</body>
+</html>
+
